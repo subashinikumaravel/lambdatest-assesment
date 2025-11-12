@@ -1,0 +1,9 @@
+tasks:
+  - name: Run Tests
+    command: mvn clean test
+
+image: gitpod/workspace-maven
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
