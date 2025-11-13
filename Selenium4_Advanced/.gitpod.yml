@@ -1,9 +1,6 @@
+image:
+  file: .gitpod.Dockerfile
+
 tasks:
-  - name: Run Tests
-    command: mvn clean test
-
-image: gitpod/workspace-maven
-
-vscode:
-  extensions:
-    - vscjava.vscode-java-pack
+  - init: mvn -q -DskipTests=true package
+  - command: mvn -q test

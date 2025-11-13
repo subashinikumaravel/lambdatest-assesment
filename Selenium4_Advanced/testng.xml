@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="LambdaTest Selenium Advanced Suite" parallel="classes" thread-count="2">
+  <!-- Test for Chrome on Windows 10 -->
+  <test name="Chrome_Windows10">
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="browserVersion" value="128.0"/>
+    <parameter name="platformName" value="Windows 10"/>
+    <parameter name="testName" value="Chrome - Windows 10 - Selenium Advanced"/>
+    <classes>
+      <class name="com.example.lambdatest.ChromeTest"/>
+    </classes>
+  </test>
+
+  <!-- Test for Edge on macOS Ventura -->
+  <test name="Edge_macOS_Ventura">
+    <parameter name="browserName" value="MicrosoftEdge"/>
+    <parameter name="browserVersion" value="127.0"/>
+    <parameter name="platformName" value="macOS Ventura"/>
+    <parameter name="testName" value="Edge - macOS Ventura - Selenium Advanced"/>
+    <classes>
+      <class name="com.example.lambdatest.EdgeTest"/>
+    </classes>
+  </test>
+</suite>
