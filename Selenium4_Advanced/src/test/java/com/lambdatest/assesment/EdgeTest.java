@@ -1,4 +1,4 @@
-package lambdatest;
+package com.lambdatest.assesment;
 
 import org.testng.annotations.Test;
 
