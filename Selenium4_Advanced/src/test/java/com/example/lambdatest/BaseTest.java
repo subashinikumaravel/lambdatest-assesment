@@ -25,8 +25,8 @@ public class BaseTest {
 			@Optional("Windows 10") String platformName, @Optional("LambdaTest - Selenium Advanced") String testName)
 			throws MalformedURLException {
 
-		username = System.getenv("ksubashini48");
-		accessKey = System.getenv("LT_dv01WrBBoY3KcUDQJml9TbwSplA3kqNDLq6hpYAK1mkqBWq");
+		String username = System.getenv("ksubashini48");
+		String accessKey = System.getenv("dv01WrBBoY3KcUDQJml9TbwSplA3kqNDLq6hpYAK1mkqBWq");
 		if (username == null || accessKey == null) {
 			throw new IllegalStateException("Please set LT_USERNAME and LT_ACCESS_KEY as environment variables.");
 		}
