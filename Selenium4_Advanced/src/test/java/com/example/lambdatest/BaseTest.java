@@ -1,4 +1,5 @@
-package com.lambdatest.assesment;
+package com.example.lambdatest;
+
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.RemoteWebDriver;
